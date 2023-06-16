@@ -10,7 +10,7 @@ description:    Please see the README on GitHub at <https://github.com/Oranged99
 homepage:       https://github.com/Oranged9922/personal-blog-project#readme
 bug-reports:    https://github.com/Oranged9922/personal-blog-project/issues
 author:         Oranged9922
-maintainer:     example@example.com
+maintainer:     lsoranged@gmail.com
 copyright:      2023 Oranged9922
 license:        BSD3
 license-file:   LICENSE
@@ -25,7 +25,10 @@ source-repository head
 
 library
   exposed-modules:
-      Lib
+      Convert
+      Html
+      Html.Internal
+      Markup
   other-modules:
       Paths_personal_blog_project
   hs-source-dirs:

@@ -1,6 +1,14 @@
 module Main (main) where
 
-import Lib
+-- import Html
+import Markup
+import Convert
+import Html
+
 
 main :: IO ()
-main = someFunc
+main = do
+    txt <- readFile "test/sample.txt"
+    let d = parse txt
+    let h = convert "Hello" d
+    writeFile "test/sample.html" (render h)
